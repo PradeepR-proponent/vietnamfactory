@@ -1,0 +1,116 @@
+/*--- media query --*/
+@media screen and (min-width:992px) {
+    header {
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    .dropdown-menu {
+                        display: none;
+                        transition:$globaltransition;
+                    }
+
+                    &:hover .dropdown-menu {
+                        display: block;
+                    }
+
+                    &:hover .dropdown-toggle.show &::after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .heading-wrap {
+        padding: 0;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 22px;
+
+        .heading-title {
+            text-align: center;
+        }
+    }
+
+    header {
+        .navbar {
+
+            .navbar-nav {
+                background-color: $primary-color;
+                padding: 20px;
+                align-items: flex-start;
+
+                .nav-item {
+                    margin-bottom: 10px;
+
+                    .dropdown-menu {
+                        position: relative;
+                        left: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header.sticky {
+        .navbar {
+            .navbar-toggler {
+                .hamburger {
+                    .bar {
+                        background-color: $primary-color;
+                    }
+                }
+            }
+
+            .nav-item {
+                .nav-link {
+                    color: #fff !important;
+                }
+
+                .dropdown-toggle {
+                    &::after {
+                        filter: invert(1) brightness(6.5) !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:767.98px) {
+    .heading-title {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .main-heading {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .sub-heading {
+        font-size: 22px;
+    }
+
+    .global-space {
+        padding: 30px 0;
+    }
+
+    p,
+    ul li,
+    span {
+        font-size: 14px;
+    }
+}
+
+// @media (min-width: 1400px) {
+//     .container{
+//         max-width: 1500px!important;
+//     }
+// }
+
+/*--- end --*/
