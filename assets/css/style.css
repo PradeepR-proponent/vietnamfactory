@@ -1334,7 +1334,7 @@ button:hover:after {
 .buy-banner .heading-wraper {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   height: 100%;
 }
 .buy-banner .heading-wraper .main-heading {
