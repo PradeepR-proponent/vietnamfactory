@@ -18,7 +18,11 @@ export default {
     generate: {
       fallback: true,
     },
+    css: [
   
+      { src: "~/assets/css/style.css", lang: "css" },
+   
+    ],
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     // plugins: [
     //   { src: "~/assets/js/font-awesome-min.js", mode: "client" },
